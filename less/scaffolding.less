@@ -1,0 +1,161 @@
+/**
+ * Scaffolding for the Swindon Car & Van style guide
+ */
+
+
+/* ==========================================================================
+   Global
+   ========================================================================== */
+
+/* apply a natural box layout model to all elements */
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header-wrapper {
+    position: relative;
+    .header-top {
+        position: relative;
+        height: 50px;
+        #gradient > .vertical(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
+        text-align: center;
+    }
+    .header-bottom {
+        height: 110px;
+        #gradient > .vertical(@btnInverseBackgroundHighlight, @btnInverseBackground);
+        .box-shadow(0 2px 8px 0 rgba(0,0,0,0.5), inset 0 4px 8px -2px rgba(0,0,0,1.0));
+    }
+}
+
+// Logo
+.header-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    .logo {
+        display: block;
+        margin-bottom: 15px;
+        img { display: block; }
+    }
+    .phone-number {
+        font-family: "Helvetica-Neue-Light", "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+        font-weight: 300;
+        font-size: 28px;
+        color: @white;
+        text-shadow: 0 1px 4px rgba(0,0,0,1.0);
+    }
+}
+
+// Search
+.header-search {
+    padding-top: 10px;
+    form {
+        position: relative;
+        width: 270px;
+        margin: 0 auto;
+        .icon-search {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            bottom: 0;
+            display: block;
+            width: auto;
+            height: auto;
+            font-size: 18px;
+        }
+    }
+}
+
+// Buttons
+.header-buttons {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    button { margin-left: 5px; }
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+.footer-wrapper {
+    position: relative;
+    .footer-top {
+        position: relative;
+        z-index: 1;
+        padding: 20px 20px 0;
+        #gradient > .vertical(@btnInverseBackground, @btnInverseBackgroundHighlight);
+        .box-shadow(0 -2px 8px 0 rgba(0,0,0,0.5));
+    }
+    .footer-bottom {
+        position: relative;
+        z-index: 2;
+        height: 50px;
+        background-color: @btnInverseBackgroundHighlight;
+    }
+}
+
+// Columns
+.footer-top {
+    .clearfix;
+    position: relative;
+    .footer-col-1,
+    .footer-col-2,
+    .footer-col-3 {
+        float: left;
+        width: 300px;
+    }
+}
+
+// Footer content styles
+
+.footer-wrapper { color: @white; }
+
+// Links
+.footer-wrapper {
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+}
+
+// Social links
+.footer-wrapper {
+    .social-links {
+        list-style: none;
+        margin: 0;
+        li {
+            //margin-bottom: @baseLineHeight / 3;
+            a {
+                text-decoration: none;
+                color: @white;
+                &:hover {
+                    color: @linkColorHover;
+                    [class^="icon-"] { color: @white; }
+                }
+            }
+        }
+    }
+}
+
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+
+a {
+    color: @linkColor;
+    text-decoration: underline;
+}
+a:hover {
+    color: @linkColorHover;
+    text-decoration: none;
+}

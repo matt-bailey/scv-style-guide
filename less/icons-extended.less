@@ -1,0 +1,54 @@
+/**
+ * Extended icons for the Swindon Car & Van style guide
+ */
+
+
+/* Extended icons
+   ========================================================================== */
+
+.icon-circular {
+    position: relative;
+    z-index: 2;
+    //margin-right: 0;
+    [class^="icon-"] {
+        position: relative;
+        z-index: 3;
+        color: @white;
+    }
+    &:after {
+        position: absolute;
+        top: -10px;
+        left: -7px;
+        z-index: 1;
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-color: @linkColor;
+        .border-radius(50%);
+        content: "";
+    }
+}
+
+// Social links
+.footer-wrapper {
+    .social-links {
+        li {
+            line-height: 25px;
+            .icon-circular {
+                margin-right: @baseLineHeight / 2;
+                &:after {
+                    position: absolute;
+                    top: 2px;
+                    left: -2px;
+                    z-index: 1;
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background-color: @linkColor;
+                    .border-radius(50%);
+                    content: "";
+                }
+            }
+        }
+    }
+}

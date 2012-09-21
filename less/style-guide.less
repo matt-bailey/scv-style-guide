@@ -1,0 +1,170 @@
+/**
+ * Style guide specific styles for the Swindon Car & Van style guide
+ */
+
+
+// Body
+body {
+    margin: 0;
+    background-color: @bodyBackground;
+    color: @textColor;
+    font-family: @baseFontFamily;
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+    text-align: center;
+}
+
+// Wrapper
+.wrapper {
+    position: relative;
+    width: 940px;
+    margin: @baseLineHeight * 3 auto;
+    text-align: left;
+}
+
+// Masthead
+.masthead { margin-bottom: @baseLineHeight * 2; }
+
+// Article scaffolding
+article {
+    .clearfix;
+    margin-bottom: @baseLineHeight; 
+    > header {
+        h2 {
+            .h3;
+            padding-bottom: @baseLineHeight / 2;
+            margin-bottom: @baseLineHeight * 2;
+            border-bottom: 1px dotted @hrBorder;
+        }
+    }
+    .content {
+        float: left;
+        width: 700px;
+        margin-bottom: @baseLineHeight;
+        section:first-child { margin-bottom: @baseLineHeight * 2; }
+    }
+    > aside {
+        float: left;
+        width: 220px;
+        padding: @baseLineHeight / 2;
+        margin-left: 20px;
+        background-color: @grayLighter;
+        .border-radius(3px);
+        h3 { .h5; }
+    }
+}
+
+// Nav scaffolding
+.masthead {
+    nav {
+        padding-bottom: @baseLineHeight;
+        margin-bottom: @baseLineHeight * 2;
+        border-bottom: 1px solid @black;
+        ul {
+            .clearfix;
+            margin: 0;
+            list-style: none;
+            li {
+                float: left;
+                margin-right: @baseLineHeight;
+            }
+        }
+    }
+}
+
+// Links
+.masthead,
+footer {
+    a {
+        text-decoration: none;
+        &:hover { text-decoration: underline; }
+    }
+}
+
+// Colours
+.colour-wrapper {
+    .clearfix;
+    margin-bottom: @baseLineHeight;
+    .colour {
+        float: left;
+        width: 60px;
+        height: 60px;
+        margin-right: @baseLineHeight;
+        &.orange { background-color: @orange; }
+        &.black { background-color: @black; }
+    }
+    p { margin-bottom: 0; }
+}
+
+// Code (inline and blocK)
+
+// Inline and block code styles
+code,
+pre {
+    padding: 0 3px 2px;
+    #font > #family > .monospace;
+    font-size: @baseFontSize - 2;
+    color: @grayDark;
+    .border-radius(3px);
+}
+
+// Inline code
+code {
+    padding: 2px 4px;
+    color: @orange;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+}
+
+// Blocks of code
+pre {
+    display: block;
+    padding: (@baseLineHeight - 1) / 2;
+    margin: 0 0 @baseLineHeight / 2;
+    font-size: @baseFontSize - 1; // 14px to 13px
+    line-height: @baseLineHeight;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre;
+    white-space: pre-wrap;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc; // fallback for IE7-8
+    border: 1px solid rgba(0,0,0,.15);
+    .border-radius(4px);
+
+    // Make prettyprint styles more spaced out for readability
+    &.prettyprint { margin-bottom: @baseLineHeight; }
+
+    // Account for some code outputs that place code tags in pre tags
+    code {
+        padding: 0;
+        color: inherit;
+        background-color: transparent;
+        border: 0;
+    }
+}
+
+// Enable scrollable blocks of code
+.pre-scrollable {
+    max-height: 340px;
+    overflow-y: scroll;
+}
+
+// Icons
+
+.icons {
+    float: left;
+    width: 300px;
+    i {
+        //margin-right: 10px;
+        font-size: 18px;
+        line-height: 36px;
+    }
+    code { margin-left: 20px; }
+}
+
+// Header and footer
+
+.header-wrapper { margin-bottom: @baseLineHeight * 2; }
+
+.content.header-footer { width: 100%; }

@@ -1,0 +1,352 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+	<title>Swindon Car &amp; Van - Style Guide</title>
+	
+	<meta name="title" content="Swindon Car &amp; Van - Style Guide">
+	<meta name="description" content="Swindon Car &amp; Van - Style Guide">
+	
+	<meta name="author" content="Matt Bailey">
+	<meta name="Copyright" content="Copyright Swindon Car and Van">
+
+	<!-- The css files are generated using LESS: http://lesscss.org/ -->
+	<!-- NOTE! - do not edit the css files directly -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<!--[if IE 7]>
+		<link rel="stylesheet" href="assets/css/font-awesome-ie7.css">
+	<![endif]-->
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+	<header class="masthead">
+		<h1>Swindon Car &amp; Van - Style Guide</h1>
+		<nav>
+			<ul>
+				<li><a href="#colours">Colours</a></li>
+				<li><a href="#typography">Typography</a></li>
+				<li><a href="#navigation">Navigation</a></li>
+				<li><a href="#buttons">Buttons</a></li>
+				<li><a href="#forms">Forms</a></li>
+				<li><a href="#widgets">Widgets</a></li>
+				<li><a href="#slideshow">Slideshow</a></li>
+				<li><a href="#toolbar">Toolbar</a></li>
+				<li><a href="#icons">Icons</a></li>
+				<li><a href="#header-footer">Header &amp; Footer Backgrounds</a></li>
+			</ul>
+		</nav>
+		<p class="lead">This document outlines some of the core styles for Swindon Car &amp; Van and can be used as a toolkit when building the website. You can download the files used in this style guide below.</p>
+		<p>A number of CSS3 styles are being used, such as gradients and rounded corners. Browsers that do not support these features will fallback to a more simply styled version.</p>
+		<p>The framework for this css has been heavily influenced by the excellent <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a>. To extend the styles for this site I would recommend checking it out.</p>
+		<p>It also uses <a href="http://lesscss.org/">LESS</a>, a CSS pre-processor. LESS extends CSS with dynamic behavior such as variables, mixins, operations and functions which, once past the initial learning curve, will vastly improve and speed up the coding of your css. To find out more about why LESS is so great, why you should be using it, and instructions, <a href="http://twitter.github.com/bootstrap/extend.html">check out this page</a> on the Twitter Bootsrap site.</p>
+		<p><a class="btn btn-large btn-primary" href="style-guide.zip"><i class="icon-download-alt"></i> Download Style Guide</a></p>
+		<p><b>If you have any questions please contact <a href="mailto:me@mattbailey.co">me@mattbailey.co</a> and I will be happy to assist as best I can.</b><p>
+	</header>
+
+	<article>
+		<a name="colours"></a>
+		<header>
+			<h2>Colours</h2>
+		</header>
+		<section class="content">
+			<div class="colour-wrapper"><div class="colour orange"></div><p><b>Orange:</b><br>#ff6600<br>rgb(255,102,0)</p></div>
+			<div class="colour-wrapper"><div class="colour black"></div><p><b>Black:</b><br>#000000<br>rgb(0,0,0)</p></div>
+		</section>
+		<aside>
+			<h3>Notes:</h3>
+			<p>A selection of colours and grays are available in variables.less</p>
+		</aside>
+	</article>
+
+	<article>
+		<a name="typography"></a>
+		<header>
+			<h2>Typography</h2>
+		</header>
+		<section class="content">
+			<h1>Heading h1</h1>
+			<h2>Heading h2</h2>
+			<h3>Heading h3</h3>
+			<h4>Heading h4</h4>
+			<h5>Heading h5</h5>
+			<h6>Heading h6</h6>
+			<p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi.</p>
+			<p>Morbi interdum mollis sapien. Sed ac risus. <b>Phasellus lacinia, magna a ullamcorper laoreet</b>, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. <a href="#">Nunc tellus ante</a>, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.</p>
+			<ul>
+				<li>Donec quis dui at dolor tempor interdum.</li>
+				<li>Vivamus molestie gravida turpis.</li>
+				<li>Fusce lobortis lorem at ipsum semper sagittis.</li>
+				<li>Nam convallis pellentesque nisl.</li>
+				<li>Integer malesuada commodo nulla.</li>
+			</ul>
+			<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.</p>
+			<p><i>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</i></p>
+		</section>
+		<aside>
+			<h3>Notes:</h3>
+			<p>To highlight the lead paragraph add the class <code>lead</code> to the <code>p</code> tag.</p>
+		</aside>
+	</article>
+
+	<article>
+		<a name="navigation"></a>
+		<header>
+			<h2>Navigation</h2>
+		</header>
+		<section class="content">
+			<div class="navbar">
+				<nav class="navbar-inner">
+					<ul class="nav">
+						<li class="first active"><a href="#"><i class="icon-home"></i></a></li>
+						<li><a href="#">Link 1</a></li>
+						<li><a href="#">Link 2</a></li>
+						<li><a href="#">Link 3</a></li>
+						<li><a href="#">Link 4</a></li>
+						<li class="last"><a href="#">Link 5</a></li>
+					</ul>
+				</nav>
+			</div>
+		</section>
+		<aside>
+			<h3>Notes:</h3>
+			<p>The home icon uses the Font Awesome webfont (<a href="#icons">see below</a>).</p>
+			<p>To highlight the current menu item add the class <code>active</code> to the <code>li</code> tag.</p>
+		</aside>
+	</article>
+
+	<article>
+		<a name="buttons"></a>
+		<header>
+			<h2>Buttons</h2>
+		</header>
+		<section class="content">
+			<section>
+				<p><button class="btn btn-large" href="#">Default</button>&nbsp;&nbsp;<button class="btn" href="#">Default</button>&nbsp;&nbsp;<button class="btn btn-small" href="#">Default</button>&nbsp;&nbsp;<button class="btn btn-mini" href="#">Default</button></p>
+				<p><button class="btn btn-large btn-primary" href="#">Primary</button>&nbsp;&nbsp;<button class="btn btn-primary" href="#">Primary</button>&nbsp;&nbsp;<button class="btn btn-small btn-primary" href="#">Primary</button>&nbsp;&nbsp;<button class="btn btn-mini btn-primary" href="#">Primary</button></p>
+				<p><button class="btn btn-large btn-inverse" href="#">Inverse</button>&nbsp;&nbsp;<button class="btn btn-inverse" href="#">Inverse</button>&nbsp;&nbsp;<button class="btn btn-small btn-inverse" href="#">Inverse</button>&nbsp;&nbsp;<button class="btn btn-mini btn-inverse" href="#">Inverse</button></p>
+			</section>
+			<section>
+				<p><b>Buttons with icons:</b></p>
+				<p><button class="btn btn-large" href="#"><i class="icon-home"></i> Home</button></p>
+				<p><button class="btn btn-large btn-primary" href="#"><i class="icon-truck"></i> Rent Here</button></p>
+				<p><button class="btn btn-large btn-inverse" href="#"><i class="icon-shopping-cart"></i> Buy Here</button></p>
+			</section>
+		</section>
+		<aside>
+			<h3>Notes:</h3>
+			<p>For default button styling add the class <code>btn</code> to <code>button</code> or <code>a</code> tags.</p>
+			<p>Change the colours by adding the class <code>btn-primary</code> or <code>btn-inverse</code>.</p>
+			<p>Change the sizes by adding the class <code>btn-large</code>, <code>btn-small</code> or <code>btn-mini</code>.</p>
+			<p>For icons use the Font Awesome webfont (<a href="#icons">see below</a>).</p>
+		</aside>
+	</article>
+
+	<article>
+		<a name="forms"></a>
+		<header>
+			<h2>Forms</h2>
+		</header>
+		<section class="content">
+			<form>
+				<legend>Please log in</legend>
+				<label for="inputEmail">Email</label>
+				<input type="text" id="inputEmail" class="input-xlarge" placeholder="Email">
+				<label class="control-label" for="inputPassword">Password</label>
+				<input type="password" id="inputPassword" class="input-xlarge" placeholder="Password">
+				<label class="checkbox">
+					<input type="checkbox"> Remember me
+				</label>
+				<div class="form-actions">
+					<button type="submit" class="btn">Log In</button>
+				</div>
+			</form>
+		</section>
+		<aside>
+			<h3>Notes:</h3>
+			<p>The same button styling rules apply as above.</p>
+			<p>To highlight the button area wrap it in a div with a class of <code>form-actions</code>.</p>
+		</aside>
+	</article>
+
+	<article>
+		<a name="widgets"></a>
+		<header>
+			<h2>Widgets</h2>
+		</header>
+		<section class="content">
+			<div class="widget">
+				<div class="widget-header">
+					<h3><i class="icon-truck"></i> Widget Title</h3>
+				</div>
+				<div class="widget-content">
+					<a href="#"><img src="images/scv-logo-sales.png" /></a>
+				</div>
+			</div>
+		</section>
+		<aside>
+			<h3>Notes:</h3>
+			<p>Widgets consist of a header and content area.</p>
+		</aside>
+	</article>
+
+	<article>
+		<a name="slideshow"></a>
+		<header>
+			<h2>Slideshow</h2>
+		</header>
+		<section class="content">
+			<div>slideshow</div>
+		</section>
+		<aside>
+			<h3>Notes:</h3>
+		</aside>
+	</article>
+
+	<article>
+		<a name="toolbar"></a>
+		<header>
+			<h2>Toolbar</h2>
+		</header>
+		<section class="content">
+			<div class="toolbar">
+				<div class="page-count">
+					<p>Page 2 of 5</p>
+				</div>
+				<div class="pagination">
+					<ul>
+						<li class="first"><a href="#">&larr;</a></li>
+						<li><a href="#">1</a></li>
+						<li class="current"><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li class="last"><a href="#">&rarr;</a></li>
+					</ul>
+				</div>
+				<div class="sort-by">
+					<p>Order by price: 
+						<select>
+							<option value="low-to-high">Low to High</option>
+							<option value="high-to-low">High to Low</option>
+						</select>
+					</p>
+				</div>
+			</div>
+		</section>
+		<aside>
+			<h3>Notes:</h3>
+		</aside>
+	</article>
+
+	<article>
+		<a name="icons"></a>
+		<header>
+			<h2>Icons</h2>
+		</header>
+		<section class="content">
+			<div class="icons">
+				<i class="icon-home"></i> <code>.icon-home</code><br>
+				<i class="icon-truck"></i> <code>.icon-truck</code><br>
+				<i class="icon-shopping-cart"></i> <code>.icon-shopping-cart</code><br>
+				<i class="icon-wrench"></i> <code>.icon-wrench</code><br>
+				<i class="icon-pencil"></i> <code>.icon-pencil</code><br>
+				<i class="icon-envelope-alt"></i> <code>.icon-envelope-alt</code><br>
+				<i class="icon-twitter"></i> <code>.icon-twitter</code><br>
+				<i class="icon-facebook-sign"></i> <code>.icon-facebook-sign</code><br>
+				<i class="icon-user"></i> <code>.icon-user</code><br>
+				<i class="icon-thumbs-up"></i> <code>.icon-thumbs-up</code><br>
+			</div>
+			<div class="icons">
+				<span class="icon-circular"><i class="icon-home"></i></span> <code>.icon-home</code><br>
+				<span class="icon-circular"><i class="icon-truck"></i></span> <code>.icon-truck</code><br>
+				<span class="icon-circular"><i class="icon-shopping-cart"></i></span> <code>.icon-shopping-cart</code><br>
+				<span class="icon-circular"><i class="icon-wrench"></i></span> <code>.icon-wrench</code><br>
+				<span class="icon-circular"><i class="icon-pencil"></i></span> <code>.icon-pencil</code><br>
+				<span class="icon-circular"><i class="icon-envelope-alt"></i></span> <code>.icon-envelope-alt</code><br>
+				<span class="icon-circular"><i class="icon-twitter"></i></span> <code>.icon-twitter</code><br>
+				<span class="icon-circular"><i class="icon-facebook-sign"></i></span> <code>.icon-facebook-sign</code><br>
+				<span class="icon-circular"><i class="icon-user"></i></span> <code>.icon-user</code><br>
+				<span class="icon-circular"><i class="icon-thumbs-up"></i></span> <code>.icon-thumbs-up</code>
+			</div>
+		</section>
+		<aside>
+			<h3>Notes:</h3>
+			<p>Icons use the free webfont <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a></p>
+			<p>Icons require an empty <code>i</code> tag with a unique class prefixed with <code>icon-</code>, for example <code>icon-home</code>. You can place the <code>i</code> tag pretty much anywhere.</p>
+			<p>To the left are some examples of the icons available. See the <a href="http://fortawesome.github.com/Font-Awesome/">Font Awesome</a> website for full details.</p>
+			<p>To place the icon in a cirlce wrap the <code>i</code> tag in a <code>span</code> with a class of <code>icon-circular</code>.</p>
+		</aside>
+	</article>
+
+	<article>
+		<a name="header-footer"></a>
+		<header>
+			<h2>Header &amp; Footer Backgrounds</h2>
+		</header>
+		<section class="content header-footer">
+			<p><b>Header background</b></p>
+			<div class="header-wrapper">
+				<div class="header-top">
+					<div class="header-logo">
+						<a class="logo" href="#">
+							<img src="images/scv-logo-rental.png" />
+						</a>
+						<div class="phone-number">01793 509 311</div>
+					</div>
+					<div class="header-search">
+						<form>
+							<input type="text" id="search" class="input-xlarge" placeholder="Search"><i class="icon-search"></i>
+						</form>
+					</div>
+					<div class="header-buttons">
+						<button class="btn btn-primary" href="#"><i class="icon-pencil"></i> Blog</button> <button class="btn btn-primary" href="#"><i class="icon-envelope-alt"></i> Email Us</button>
+					</div>
+				</div>
+				<div class="header-bottom"></div>
+			</div>
+			<p><b>Footer background</b></p>
+			<div class="footer-wrapper">
+				<div class="footer-top">
+					<div class="footer-col-1 vcard">
+						<p class="org"><b>&copy; Swindon Car & Van</b></p>
+						<p><span class="adr">1B Station Road, Swindon, SN1 2BD</span><br>
+							Telephone: <b class="tel">01793 509 311</b></p>
+					</div>
+					<div class="footer-col-2">
+						<ul>
+							<li><a href="#">Browse New &amp; Used Vans</a></li>
+							<li><a href="#">Site Map</a></li>
+							<li><a href="#">Terms &amp; Conditions</a></li>
+						</ul>
+					</div>
+					<div class="footer-col-3">
+						<ul class="social-links">
+							<li><a href="#"><span class="icon-circular"><i class="icon-facebook"></i></span> Follow us on Facebook</a></li>
+							<li><a href="#"><span class="icon-circular"><i class="icon-twitter"></span></i> Follow us on Twitter</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-bottom"></div>
+			</div>
+		</section>
+		<aside>
+			<h3>Notes:</h3>
+		</aside>
+	</article>
+
+	<footer>
+		<p>&copy; Swindon Car &amp; Van.</p>
+	</footer>
+
+</div>
+  
+</body>
+
+</html>
