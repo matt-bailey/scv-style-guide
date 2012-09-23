@@ -23,7 +23,10 @@ body {
 }
 
 // Masthead
-.masthead { margin-bottom: @baseLineHeight * 2; }
+.masthead {
+    margin-bottom: @baseLineHeight * 2;
+    h3 { margin-bottom: @baseLineHeight / 2; }
+}
 
 // Article scaffolding
 article {
@@ -156,11 +159,11 @@ pre {
     float: left;
     width: 300px;
     i {
-        //margin-right: 10px;
+        margin-right: 10px;
         font-size: 18px;
         line-height: 36px;
     }
-    code { margin-left: 20px; }
+    //code { margin-left: 20px; }
 }
 
 // Header and footer
