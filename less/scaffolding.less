@@ -7,6 +7,17 @@
    Global
    ========================================================================== */
 
+// Body
+body {
+    margin: 0;
+    background-color: @bodyBackground;
+    color: @textColor;
+    font-family: @baseFontFamily;
+    font-size: @baseFontSize;
+    line-height: @baseLineHeight;
+    text-align: center;
+}
+
 /* apply a natural box layout model to all elements */
 * {
     -moz-box-sizing: border-box;
@@ -19,19 +30,26 @@
    Header
    ========================================================================== */
 
-.header-wrapper {
-    position: relative;
+#header { text-align: center; }
+.header-top-wrapper {
+    #gradient > .vertical(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
     .header-top {
         position: relative;
+        width: 940px;
         height: 50px;
-        #gradient > .vertical(@btnPrimaryBackground, @btnPrimaryBackgroundHighlight);
-        text-align: center;
+        margin: 0 auto;
+        text-align: left;
     }
+}
+.header-bottom-wrapper {
+    #gradient > .vertical(@btnInverseBackgroundHighlight, @btnInverseBackground);
+    .box-shadow(0 2px 8px 0 rgba(0,0,0,0.5), inset 0 4px 8px -2px rgba(0,0,0,1.0));
     .header-bottom {
         position: relative;
+        width: 940px;
         height: 110px;
-        #gradient > .vertical(@btnInverseBackgroundHighlight, @btnInverseBackground);
-        .box-shadow(0 2px 8px 0 rgba(0,0,0,0.5), inset 0 4px 8px -2px rgba(0,0,0,1.0));
+        margin: 0 auto;
+        text-align: left;
         .header-bottom-inner {
             position: absolute;
             bottom: 20px;
@@ -97,20 +115,28 @@
    Footer
    ========================================================================== */
 
-.footer-wrapper {
-    position: relative;
+#footer { text-align: center; }
+.footer-top-wrapper {
+    padding: 20px 20px 0;
+    #gradient > .vertical(@btnInverseBackground, @btnInverseBackgroundHighlight);
+    .box-shadow(0 -2px 8px 0 rgba(0,0,0,0.5));
     .footer-top {
         position: relative;
+        width: 940px;
         z-index: 1;
-        padding: 20px 20px 0;
-        #gradient > .vertical(@btnInverseBackground, @btnInverseBackgroundHighlight);
-        .box-shadow(0 -2px 8px 0 rgba(0,0,0,0.5));
+        margin: 0 auto;
+        text-align: left;
     }
+}
+.footer-bottom-wrapper {
+    background-color: @btnInverseBackgroundHighlight;
     .footer-bottom {
         position: relative;
+        width: 940px;
         z-index: 2;
         height: 50px;
-        background-color: @btnInverseBackgroundHighlight;
+        margin: 0 auto;
+        text-align: left;
     }
 }
 
@@ -128,10 +154,10 @@
 
 // Footer content styles
 
-.footer-wrapper { color: @white; }
+#footer { color: @white; }
 
 // Links
-.footer-wrapper {
+#footer {
     ul {
         list-style: none;
         margin: 0;
@@ -139,7 +165,7 @@
 }
 
 // Social links
-.footer-wrapper {
+.footer-top {
     .social-links {
         list-style: none;
         margin: 0;
